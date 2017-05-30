@@ -256,7 +256,7 @@ class Main(QMainWindow):
             self.on_show()
 
     # 分期超额收益率按钮切换事件
-    def on_show_c(self):
+    def on_show_cu(self):
         if self.ui.cumReturnButton.isChecked():
             self.on_show()
 
@@ -275,7 +275,7 @@ class Main(QMainWindow):
         self.ui.index800Button.toggled.connect(self.on_show_8)
         #收益类型
         self.ui.periodReturnButton.toggled.connect(self.on_show_p)
-        self.ui.cumReturnButton.toggled.connect(self.on_show_c)
+        self.ui.cumReturnButton.toggled.connect(self.on_show_cu)
         # 组合占比
         self.ui.checkBoxP1.stateChanged.connect(self.on_show)
         self.ui.checkBoxP5.stateChanged.connect(self.on_show)
